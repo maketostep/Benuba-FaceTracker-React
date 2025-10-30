@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vh: 1vh;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.full-screen-adjusted {
+  height: calc(var(--vh, 1vh) * 100 - 2rem);
+}
+
+.full-screen {
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+/* Единный фон сайта */
+body {
+  background-color: #e7e7e7;
+  background-image: linear-gradient(
+    135deg,
+    #1f1f1f 11.75%,
+    #42258d 22.43%,
+    #2d73af 34.2%,
+    #2694bc 40.47%,
+    #26c6df 52.97%,
+    #26c486 70.34%,
+    #26bc81 73.81%,
+    #25b17a 76.59%,
+    #24a472 79.62%,
+    #1f3c31 91.2%,
+    #1e3129 94.64%,
+    #1d1d1d 100%,
+    #1d1d1d 100%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
